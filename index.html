@@ -7,11 +7,17 @@
   <title>Pokemon Go</title>
 </head>
 <body>
+  <center>
   <div id="app">
-    {{msg}}
+    <h1>{{msg}}</h1>
     <br>
-    <button type="button" @click="getApi()"> Get Api</button>
+      <div class ="box" v-for="show in list">
+        <img src="{{show.icon}}">
+      {{show.name}}
+    </div>
   </div>
+</center>
 </body>
 <script src="./index.js"></script>
+<link rel="stylesheet" href="./index.css">
 </html>
